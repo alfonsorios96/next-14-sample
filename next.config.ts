@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+    experimental: {
+        // Activamos Server Actions con configuración por defecto:
+        serverActions: {},
+
+        // Y mantenemos las rutas tipadas a true:
+        // typedRoutes: true,
+    },
 };
 
 export default nextConfig;
